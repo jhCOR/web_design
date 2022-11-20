@@ -1,0 +1,26 @@
+.outline{
+    border: 1px solid black;
+}
+.show_box{
+  font-size: medium;
+  position: relative;
+  animation: expand 1s ease-in-out;
+}
+@keyframes expand{
+  0% {
+    opacity: 0;
+    transform: scaleX( 0 );
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+.overlay {
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    animation: expand 5s ease-in-out;
+    background: blue;
+    background-size: cover;
+}

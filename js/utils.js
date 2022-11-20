@@ -2,7 +2,7 @@ function isIterable(obj) {
   return typeof obj[Symbol.iterator] === 'function';
 }
 
-var toArrayIfNot = function(obj){
+function toArrayIfNot(obj){
     if (obj == null) {
         return ['null'];
     }
@@ -19,3 +19,10 @@ var toArrayIfNot = function(obj){
     return obj;
 }
 
+function availableWidth(){
+    let windowWidth = window.innerWidth ? window.innerWidth : null;
+    let screenWidth = screen.width ? screen.width : null;
+    let pageWidth = Math.min(windowWidth, screenWidth);
+    console.log(windowWidth, screenWidth)
+    return screenWidth;
+}

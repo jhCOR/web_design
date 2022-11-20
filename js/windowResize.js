@@ -1,13 +1,17 @@
-function windowResizer(callback, timer) {
+function windowResizer(callback, timer, option) {
     var delay = 300;
 
     window.addEventListener('resize', function () {
+        let pageWidth = availableWidth();
+        console.log("reesize", pageWidth)
         clearTimeout(timer);
-        timer = setTimeout(callback, delay);
-        return timer
+        console.log('resize');
+        if (option(pageWidth)) {
+            timer = setTimeout(callback, delay);
+        }
+        return timer;
     });
 }
-
 function resizeText(elements, size){
     return function(){
         if(typeof size != 'string'){

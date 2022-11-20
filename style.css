@@ -1,3 +1,11 @@
+
+
+.child{
+ margin-left:30%;
+ padding:25px;
+ background-color: white;
+}
+
 .title {
     margin: 5%;
 	font-weight: bold;

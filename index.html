@@ -2,71 +2,92 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="./style/index.css" />
+        <link rel="stylesheet" href="./style/typing.css" />
         <script src="https://code.jquery.com/jquery-latest.min.js"></script>
-        <link rel="SHORTCUT ICON" href="./src/rec_logo.png" />
-        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+        <link rel="SHORTCUT ICON" href="./resource/rec_logo.png" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body>
         <div class="title container">
-            <img class="img-fluid"  src="./src/sogang_logo.png" alt="서강대학교 로고" />
+            <img class="img-fluid" src="./resource/sogang_logo.png" alt="서강대학교 로고" />
+            <button
+                class="btn"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasScrolling"
+                aria-controls="offcanvasScrolling"
+            >
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    fill="currentColor"
+                    class="bi bi-list"
+                    viewBox="0 0 16 16"
+                >
+                    <path
+                        fill-rule="evenodd"
+                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                    />
+                </svg>
+            </button>
         </div>
-        <div class="body container" >
-            <div id="Accordion_wrap">
-                <div class="que big-text">
-                    <span>장학금</span>
-                    <div class="arrow-wrap">
-                        <span class="arrow-top">↑</span>
-                        <span class="arrow-bottom">↓</span>
-                    </div>
+       
+        <div class="body container">
+            <!-- <div class="overlay">
+                
+            </div> -->
+            <div class="container intro" vstyle="width: 80%">
+                <div class="container ">
+                    <h1 class="display-3 typing" ></h1>
                 </div>
-                <div class="anw">
-                    <div class='container-sm'>
-                        <div>
-                            <img src="./src/whole_map.png" class="rounded mx-auto d-block" alt="서강대학교 지도">
-                        </div>
-                        <div>
-                            <span>학생 지원팀 관련 텍스트..</span>
-                        </div>
-                        <a href="http://www.sogang.ac.kr/bachelor/">학지팀 링크</a>
-                    </div>
+                <div class="container">
+                    <h1 class="display-3 typing"></h1>
                 </div>
-                <div class="que big-text">
-                    <span>글쓰기 튜터링</span>
-                    <div class="arrow-wrap">
-                        <span class="arrow-top">↑</span>
-                        <span class="arrow-bottom">↓</span>
-                    </div>
+                <div calss="container">
+                    <h1 class="display-3 typing"></h1>
                 </div>
-                <div class="anw">
-                    <div class='container-sm'>
-                        <div>
-                            <img src="./src/whole_map.png" class="rounded mx-auto d-block" alt="서강대학교 지도">
-                        </div>
-                        <div>
-                            <span>학생 지원팀 관련 텍스트..</span>
-                        </div>
-                        <a href="http://www.sogang.ac.kr/bachelor/">학지팀 링크</a>
+            </div>
+        </div>
+        
+        <div class="container">    
+            <div>
+                <div>
+                <div
+                    class="offcanvas offcanvas-start"
+                    data-bs-scroll="true"
+                    data-bs-backdrop="false"
+                    tabindex="-1"
+                    id="offcanvasScrolling"
+                    aria-labelledby="offcanvasScrollingLabel"
+                >
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Sogang Menu</h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"
+                        ></button>
                     </div>
-                </div>
-                <div class="que big-text">
-                    <span>기타</span>
-                    <div class="arrow-wrap">
-                        <span class="arrow-top">↑</span>
-                        <span class="arrow-bottom">↓</span>
-                    </div>
-                </div>
-                <div class="anw">
-                    <div class='container-sm'>
-                        <div>
-                            <img src="./src/whole_map.png" class="rounded mx-auto d-block" alt="서강대학교 지도">
+                    <div class="offcanvas-body">
+                        <div class="list-group list-group-flush">
+                            <a href="/sogang_lab_web_HTML/html/about.html" class="list-group-item">About</a>
+                            <a href="/sogang_lab_web_HTML/html/gallery.html" class="list-group-item">Gallery</a>
+                            <a class="list-group-item">Custom Business card</a>
+                            <a href="/sogang_lab_web_HTML/html/developNote.html" class="list-group-item">개발 노트</a>
                         </div>
-                        <div>
-                            <span>학생 지원팀 관련 텍스트..</span>
-                        </div>
-                        <a href="http://www.sogang.ac.kr/bachelor/">학지팀 링크</a>
                     </div>
                 </div>
             </div>
+            </div>
+  
+            <script src="./js/typing.js"></script>
             <script src="./js/arcodian.js"></script>
             <script src="./js/main.js"></script>
             <script src="./js/utils.js"></script>
