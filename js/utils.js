@@ -19,10 +19,4 @@ function toArrayIfNot(obj){
     return obj;
 }
 
-function availableWidth(){
-    let windowWidth = window.innerWidth ? window.innerWidth : null;
-    let screenWidth = screen.width ? screen.width : null;
-    let pageWidth = Math.min(windowWidth, screenWidth);
-    console.log(windowWidth, screenWidth)
-    return screenWidth;
-}
+

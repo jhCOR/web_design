@@ -1,11 +1,13 @@
 .outline{
     border: 1px solid black;
 }
+
 .show_box{
   font-size: medium;
   position: relative;
   animation: expand 1s ease-in-out;
 }
+
 @keyframes expand{
   0% {
     opacity: 0;
@@ -16,11 +18,34 @@
     transform: none;
   }
 }
+@keyframes expand_verticle{
+  0% {
+    opacity: 0;
+    transform: scaleY( 0 );
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
 .overlay {
     position: absolute;
     width: 100px;
     height: 200px;
-    animation: expand 5s ease-in-out;
-    background: blue;
-    background-size: cover;
+    animation: expand 2s ease-in-out;
+    border: 2px solid gray;
+    background-size: cover; 
+}
+
+.overlay_verticle {
+    position: absolute;
+    width: 100px;
+    height: 200px;
+    animation: expand_verticle 1s ease-in-out;
+    border: 2px solid red;
+    background-size: cover; 
+}
+
+.rotate{
+    transform: rotate( -90deg );
 }
