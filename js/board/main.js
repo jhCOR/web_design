@@ -26,7 +26,7 @@ if (canvas) {
     canvas.addEventListener("mouseup", stopPainting);
     canvas.addEventListener("mouseleave", stopPainting);
     
-    canvas.addEventListener("touchstart",startPainting, false);
-	canvas.addEventListener("touchmove",onMouseMove, false);
-    canvas.addEventListener("touchend",stopPainting, false);
+    canvas.addEventListener("touchstart",startTouchPainting, false);
+	canvas.addEventListener("touchmove",onTouchMove, false);
+    canvas.addEventListener("touchend",stopTouchPainting, false);
 }
