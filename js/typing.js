@@ -20,6 +20,7 @@ var pair = [
 ];
 
 function type(element, text) {
+    if(element==null){return}
     element.textContent += text;
 }
 
