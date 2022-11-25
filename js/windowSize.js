@@ -13,12 +13,17 @@ function windowResizer(handlerPair, timer) {
 }
 
 function resizeText(elements, size){
-    
     return function(){
         if(typeof size != 'string'){
             throw new Error('variable "size" is not a string');
         }
         elements.map(element=>element.style.fontSize = size);
+    }
+}
+
+function resizeRatio(elements, size){
+    return function(){
+        
     }
 }
 
@@ -29,3 +34,12 @@ function availableWidth(){
     //console.log(windowWidth, screenWidth)
     return screenWidth;
 }
+
+function calculateMobileRatio(){
+    let items = document.getElementsByClassName('trans_ratio');
+    let pageWidth = availableWidth();
+    if(pageWidth<400){
+        resizeRatio(items, null)
+    }
+}
+    

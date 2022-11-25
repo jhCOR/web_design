@@ -49,3 +49,7 @@
 .rotate{
     transform: rotate( -90deg );
 }
+
+.trans_ratio{
+    height: '15vh';
+}

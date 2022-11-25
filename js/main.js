@@ -14,7 +14,6 @@ window.onload = function (){
     let handler1 = {'option':function(query){if(query<500)return true;}, "callback":resizeText(titleList, '30px')}
     let handler2 = {'option':function(query){if(query>=500)return true;}, "callback":resizeText(titleList, '14px')}
     timer = windowResizer([handler1, handler2], timer);
-
 };
 
 
