@@ -1,19 +1,19 @@
 var pair = [
     {
         target: document.getElementsByClassName('typing')[0],
-        content: '당신이 선택한 꿈을',
+        content: '여백을 채우기 위한',
         time: 200,
         option: 'char',
     },
     {
         target: document.getElementsByClassName('typing')[1],
-        content: '결과로 만들',
+        content: '글자 / 사진',
         time: 200,
         option: 'char',
     },
     {
         target: document.getElementsByClassName('typing')[2],
-        content: '서강대학교 2023',
+        content: '(세로 길이가 깁니다)',
         time: 200,
         option: 'sentence',
     },
