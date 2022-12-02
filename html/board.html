@@ -13,144 +13,152 @@
         <!-- load bootstrap css -->
     </head>
     <body>
-        <div class="body container">
-            <header class="pb-3 mb-4 border-bottom">
-                <img
-                    class="img-fluid"
-                    src="../resource/sogang_logo.png"
-                    alt="서강대학교 로고"
-                    onclick="document.location.href='../index.html'"
-                />
-                <button
-                    class="btn"
-                    type="button"
-                    data-bs-toggle="offcanvas"
-                    data-bs-target="#offcanvasScrolling"
-                    aria-controls="offcanvasScrolling"
-                >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="32"
-                        height="32"
-                        fill="currentColor"
-                        class="bi bi-list"
-                        viewBox="0 0 16 16"
+        <main class="textbody">
+            <div class="py-4" style="padding: 5%;">
+                <header class="pb-3 mb-4 border-bottom">
+                    <img
+                        class="img-fluid"
+                        src="../resource/sogang_logo.png"
+                        alt="서강대학교 로고"
+                        onclick="document.location.href='../index.html'"
+                        width="30%"
+                    />
+                    <button
+                        class="btn"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasScrolling"
+                        aria-controls="offcanvasScrolling"
                     >
-                        <path
-                            fill-rule="evenodd"
-                            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
-                        />
-                    </svg>
-                </button>
-            </header>
-        </div>
-        <div class="body container">
-            <div class="container my-3">
-                <link rel="stylesheet" type="text/css" href="../style/board.css" />
-                <h2 class="border-bottom py-2">Card Maker</h2>
-                <div class="container">
-                    <div class="row">
-                        <div class="col" id="canvas_container">
-                            <canvas id="customCanvas" class="canvas"></canvas>
-                            <div class="palette">
-                                <button
-                                    type="button"
-                                    class="color"
-                                    style="background-color: #ff0000;"
-                                ></button>
-                                <button
-                                    type="button"
-                                    class="color"
-                                    style="background-color: #ff4000;"
-                                ></button>
-                                <button
-                                    type="button"
-                                    class="color"
-                                    style="background-color: #f7fe2e;"
-                                ></button>
-                                <button
-                                    type="button"
-                                    class="color"
-                                    style="background-color: #80ff00;"
-                                ></button>
-                                <button
-                                    type="button"
-                                    class="color"
-                                    style="background-color: #0000ff;"
-                                ></button>
-                                <button
-                                    type="button"
-                                    class="color"
-                                    style="background-color: #cceeff;"
-                                ></button>
-                                <button
-                                    type="button"
-                                    class="color"
-                                    style="background-color: #fa58f4;"
-                                ></button>
-                                <button
-                                    type="button"
-                                    class="color"
-                                    style="background-color: #5f04b4;"
-                                ></button>
-                                <button
-                                    type="button"
-                                    class="color"
-                                    style="background-color: #000000;"
-                                ></button>
-                                <button
-                                    type="button"
-                                    id="reset"
-                                    class="btn btn-sm btn-outline-secondary"
-                                >
-                                    초기화
-                                </button>
-                                <button
-                                    type="button"
-                                    id="undo"
-                                    class="btn btn-sm btn-outline-secondary"
-                                >
-                                    되돌리기
-                                </button>
-                                <button
-                                    type="button"
-                                    id="redo"
-                                    class="btn btn-sm btn-outline-secondary"
-                                >
-                                    복구하기
-                                </button>
-                            </div>
-                            <div style="width: 150px;">
-                                <label for="customRange3" class="form-label"
-                                    >브러쉬 크기 변경</label
-                                >
-                                <input
-                                    type="range"
-                                    class="form-range"
-                                    min="0.1"
-                                    max="5.0"
-                                    value="2.0"
-                                    step="0.5"
-                                    id="customRange3"
-                                />
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="row">
-                                <div class="col">
-                                    <button type="button" id="downloadButton" class="btn">
-                                        다운로드
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="60"
+                            height="60"
+                            fill="currentColor"
+                            class="bi bi-list"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                            />
+                        </svg>
+                    </button>
+                </header>
+            </div>
+            <div class="body">
+                <div class="container my-3">
+                    <link rel="stylesheet" type="text/css" href="../style/board.css" />
+                    <h2 class="border-bottom py-2">Card Maker</h2>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col" id="canvas_container"  style="width:100%" >
+                                <canvas id="customCanvas"class="canvas"></canvas>
+                                <div class="palette">
+                                    <button
+                                        type="button"
+                                        class="color"
+                                        style="background-color: #ff0000;"
+                                    ></button>
+                                    <button
+                                        type="button"
+                                        class="color"
+                                        style="background-color: #ff4000;"
+                                    ></button>
+                                    <button
+                                        type="button"
+                                        class="color"
+                                        style="background-color: #f7fe2e;"
+                                    ></button>
+                                    <button
+                                        type="button"
+                                        class="color"
+                                        style="background-color: #80ff00;"
+                                    ></button>
+                                    <button
+                                        type="button"
+                                        class="color"
+                                        style="background-color: #0000ff;"
+                                    ></button>
+                                    <button
+                                        type="button"
+                                        class="color"
+                                        style="background-color: #cceeff;"
+                                    ></button>
+                                    <button
+                                        type="button"
+                                        class="color"
+                                        style="background-color: #fa58f4;"
+                                    ></button>
+                                    <button
+                                        type="button"
+                                        class="color"
+                                        style="background-color: #5f04b4;"
+                                    ></button>
+                                    <button
+                                        type="button"
+                                        class="color"
+                                        style="background-color: #000000;"
+                                    ></button>
+                                    <button
+                                        type="button"
+                                        id="reset"
+                                        class="btn btn-sm btn-outline-secondary"
+                                    >
+                                        초기화
                                     </button>
-                                    <button type="button" id="submitButton" class="btn" onclick="document.location.href='./submit.html'">
-                                        제출하기
+                                    <button
+                                        type="button"
+                                        id="undo"
+                                        class="btn btn-sm btn-outline-secondary"
+                                    >
+                                        되돌리기
+                                    </button>
+                                    <button
+                                        type="button"
+                                        id="redo"
+                                        class="btn btn-sm btn-outline-secondary"
+                                    >
+                                        복구하기
                                     </button>
                                 </div>
-                                <div>
-                                    <div class="card">
-                                        <div class="card-body" overflow="hidden">
-                                            <p>
-                                                그림 목록
-                                            </p>
+                                <div style="width: 150px;">
+                                    <label for="customRange3" class="form-label"
+                                        >브러쉬 크기 변경</label
+                                    >
+                                    <input
+                                        type="range"
+                                        class="form-range"
+                                        min="0.1"
+                                        max="5.0"
+                                        value="2.0"
+                                        step="0.5"
+                                        id="customRange3"
+                                    />
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="row">
+                                    <div class="col">
+                                        <button type="button" id="downloadButton" class="btn">
+                                            다운로드
+                                        </button>
+                                        <button
+                                            type="button"
+                                            id="submitButton"
+                                            class="btn"
+                                            onclick="document.location.href='./submit.html'"
+                                        >
+                                            제출하기
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <div class="card">
+                                            <div class="card-body" overflow="hidden">
+                                                <p>
+                                                    그림 목록
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -158,47 +166,49 @@
                         </div>
                     </div>
                 </div>
+                <script src="../js/board/draw.js"></script>
+                <script src="../js/board/main.js"></script>
+                <script src="../js/board/utils.js"></script>
+                <script src="../js/board/palette.js"></script>
             </div>
-            <script src="../js/board/draw.js"></script>
-            <script src="../js/board/main.js"></script>
-            <script src="../js/board/utils.js"></script>
-            <script src="../js/board/palette.js"></script>
-        </div>
-        <div class="menu">
-            <div>
+            <div class="menu">
                 <div>
-                    <div
-                        class="offcanvas offcanvas-start"
-                        data-bs-scroll="true"
-                        data-bs-backdrop="false"
-                        tabindex="-1"
-                        id="offcanvasScrolling"
-                        aria-labelledby="offcanvasScrollingLabel"
-                    >
-                        <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
-                                Sogang Menu
-                            </h5>
-                            <button
-                                type="button"
-                                class="btn-close"
-                                data-bs-dismiss="offcanvas"
-                                aria-label="Close"
-                            ></button>
-                        </div>
-                        <div class="offcanvas-body">
-                            <div class="list-group list-group-flush">
-                                <a href="../html/about.html" class="list-group-item">About</a>
-                                <a href="../html/gallery.html" class="list-group-item">Gallery</a>
-                                <a class="list-group-item">Custom Business card</a>
-                                <a href="../html/developNote.html" class="list-group-item"
-                                    >개발 노트</a
-                                >
+                    <div>
+                        <div
+                            class="offcanvas offcanvas-start"
+                            data-bs-scroll="true"
+                            data-bs-backdrop="false"
+                            tabindex="-1"
+                            id="offcanvasScrolling"
+                            aria-labelledby="offcanvasScrollingLabel"
+                        >
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+                                    Sogang Menu
+                                </h5>
+                                <button
+                                    type="button"
+                                    class="btn-close"
+                                    data-bs-dismiss="offcanvas"
+                                    aria-label="Close"
+                                ></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <div class="list-group list-group-flush">
+                                    <a href="../html/about.html" class="list-group-item">About</a>
+                                    <a href="../html/gallery.html" class="list-group-item"
+                                        >Gallery</a
+                                    >
+                                    <a class="list-group-item">Custom Business card</a>
+                                    <a href="../html/developNote.html" class="list-group-item"
+                                        >개발 노트</a
+                                    >
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </main>
     </body>
 </html>
