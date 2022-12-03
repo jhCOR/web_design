@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="./style/index.css" />
+        <link rel="stylesheet" href="./style/typing.css" />
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <link rel="SHORTCUT ICON" href="./resource/rec_logo.png" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    </head>
+    <body>
+        <main class="textbody">
+            <div class="py-4" style="padding: 5%;">
+                <header class="pb-3 mb-4 border-bottom">
+                    <img
+                        class="img-fluid"
+                        src="../resource/sogang_logo.png"
+                        alt="서강대학교 로고"
+                        onclick="document.location.href='../index.html'"
+                        width="300vw"
+                    />
+                    <button
+                        class="btn"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasScrolling"
+                        aria-controls="offcanvasScrolling"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="60"
+                            height="60"
+                            fill="currentColor"
+                            class="bi bi-list"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+                            />
+                        </svg>
+                    </button>
+                </header>
+                <br />
+                <div style="padding-top:2%">
+                    <table class="table">
+                        <h2>
+                            행정지원시설
+                        </h2>
+                        <thead>
+                            <tr>
+                                <th scope="col">이름</th>
+                                <th scope="col">연락처</th>
+                                <th scope="col">위치</th>
+                                <th scope="col">홈페이지</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">학사지원팀</th>
+                                <td>TEL: 705-8124</td>
+                                <td>본관(A관) 104호</td>
+                                <td>
+                                    <a href="http://www.sogang.ac.kr/bachelor/"
+                                        >http://www.sogang.ac.kr/bachelor/</a
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">학생지원팀</th>
+                                <td>TEL: 705-8128</td>
+                                <td>베르크만스 우정원(BW관) 209호</td>
+                                <td>
+                                    <a href="http://students.sogang.ac.kr/"
+                                        >http://students.sogang.ac.kr/</a
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">종합봉사실</th>
+                                <td>TEL: 705-8000</td>
+                                <td>본관(A관) 1층</td>
+                                <td>
+                                    <a href="http://onestop.sogang.ac.kr/"
+                                        >http://onestop.sogang.ac.kr/</a
+                                    >
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">취업지원팀</th>
+                                <td>TEL: 705-8131</td>
+                                <td>베르크만스 우정원(BW관) 300호</td>
+                                <td>
+                                    <a href="http://job.sogang.ac.kr">http://job.sogang.ac.kr</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div style="padding-top:2%">
+                    <table class="table">
+                        <h2>
+                            식당
+                        </h2>
+                        <thead>
+                            <tr>
+                                <th scope="col">이름</th>
+                                <th scope="col">번호</th>
+                                <th scope="col">위치</th>
+                                <th scope="col">비고</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">베르크만스 우정원 학생식당</th>
+                                <td>TEL: 706-7691</td>
+                                <td>BW관 1F</td>
+                                <td>
+                                    ❗학기 중<br />
+                                    [평일]<br />
+                                    덮고볶고 : 11:00-15:00 가스야 : 11:00-15:00 얼큰달큰 :
+                                    11:00-15:00 스낵 : 11:00-15:00 석식 : 17:00-18:30<br />
+
+                                    [주말] : 미운영<br /><br />
+
+                                    ❗방학 중<br />
+                                    [평일] : 11:00-14:00
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">베르크만스 우정원 교직원식당</th>
+                                <td>TEL: 706-7691</td>
+                                <td>BW관 1F</td>
+                                <td>
+                                    ❗학기 중<br />
+                                    [평일]<br />
+                                    11:00-14:00<br /><br />
+
+                                    ❗방학 중<br />
+                                    [평일]<br />11:00-14:00<br />
+
+                                    석식/학기중 토요일/방학중 석식 : 미운영
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">엠마오관 식당</th>
+                                <td>TEL: 717-7691</td>
+                                <td>E관 3F</td>
+                                <td>
+                                    평일 : 11:30~13:30
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div style="padding-top:2%">
+                    <table class="table">
+                        <h2>
+                            매점(라운지)
+                        </h2>
+                        <thead>
+                            <tr>
+                                <th scope="col">이름</th>
+                                <th scope="col">번호</th>
+                                <th scope="col">위치</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">도서관라운지 (도라지)</th>
+                                <td>TEL: 716-6308</td>
+                                <td>L2관 B1</td>
+                                <td>
+                                    ❗학기 중: 평일 8:00 - 18:00 토,일요일 휴무 ❗방학 중: 평일 8:30
+                                    - 17:00 토,일요일 휴무
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">마태오관 매점</th>
+                                <td>TEL: 71741</td>
+                                <td>MA관 2F</td>
+                                <td>
+                                    휴점 중
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">베르크만스우정원 매점</th>
+                                <td>TEL: 705-8255</td>
+                                <td>BW 1F</td>
+                                <td>
+                                    휴점 중
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <div style="padding-top:2%">
+                    <table class="table">
+                        <h2>
+                            학생 PC실
+                        </h2>
+                        <thead>
+                            <tr>
+                                <th scope="col">이름</th>
+                                <th scope="col">번호</th>
+                                <th scope="col">위치</th>
+                                <th scope="col">비고</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">AS관</th>
+                                <td></td>
+                                <td>AS관 1F</td>
+                                <td>
+                                    [학기 중]평일 9:00 - 17:00 (방학기간은 별도 공지) 토, 일요일 및
+                                    공유일 휴관 매주 목요일은 실습실 기기 점검 및 보수관계로
+                                    11시부터 이용 가능
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">J관</th>
+                                <td></td>
+                                <td>J관 4F(401호)</td>
+                                <td>
+                                    [학기 중]평일 9:00 - 17:00 (방학기간은 별도 공지) 토, 일요일 및
+                                    공유일 휴관 매주 목요일은 실습실 기기 점검 및 보수관계로
+                                    11시부터 이용 가능
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">K관</th>
+                                <td></td>
+                                <td>K관 4F(412호)</td>
+                                <td>
+                                    10:00 - 22:00 -K관 카드 구매 시 인쇄 가능 (경제학부 행정팀에서
+                                    판매 : 2000원→3500사용가능) -대학원 수업에 따라 일주일에 두 번
+                                    일찍 마감
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">X관</th>
+                                <td></td>
+                                <td>X관 3F</td>
+                                <td>
+                                    [학기 중]평일 9:00 - 19:00 토요일 10:00 - 17:00 일요일 휴관
+                                    [방학 중]평일 9:00 - 17:00 토, 일요일 휴관
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">GA관</th>
+                                <td></td>
+                                <td>GA관 4F</td>
+                                <td>
+                                    평일 10:00 - 17:00 점심시간 11:50 - 13:00 -A4 용지 가져올 경우
+                                    20원 없을 경우 30원 -시험기간 개방 안함
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">MA관 2F</th>
+                                <td></td>
+                                <td>MA관 2F</td>
+                                <td>
+                                    학기 중 평일 : 08:30~20:00 / 토요일 : 09:00~13:00 방학 중 평일 :
+                                    09:00~17:00
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <footer class="pt-3 mt-4 text-muted border-top">
+                    <h5>
+                        &copy; Sogang Univ. 2022 교양교육 연구실
+                    </h5>
+                </footer>
+            </div>
+            <div class="container">
+                <div class="menu">
+                    <div>
+                        <div>
+                            <div
+                                class="offcanvas offcanvas-start"
+                                data-bs-scroll="true"
+                                data-bs-backdrop="false"
+                                tabindex="-1"
+                                id="offcanvasScrolling"
+                                aria-labelledby="offcanvasScrollingLabel"
+                            >
+                                <div class="offcanvas-header">
+                                    <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+                                        Sogang Menu
+                                    </h5>
+                                    <button
+                                        type="button"
+                                        class="btn-close"
+                                        data-bs-dismiss="offcanvas"
+                                        aria-label="Close"
+                                    ></button>
+                                </div>
+                                <div class="offcanvas-body">
+                                    <div class="list-group list-group-flush">
+                                        <a href="../html/about.html" class="list-group-item"
+                                            >About</a
+                                        >
+                                        <a href="../html/gallery.html" class="list-group-item"
+                                            >Gallery</a
+                                        >
+                                        <a href="../html/board.html" class="list-group-item"
+                                            >Custom Business card</a
+                                        >
+                                        <a href="../html/developNote.html" class="list-group-item"
+                                            >개발 노트</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="./js/typing.js"></script>
+        <script src="./js/arcodian.js"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/utils.js"></script>
+        <script src="./js/windowSize.js"></script>
+    </body>
+</html>
